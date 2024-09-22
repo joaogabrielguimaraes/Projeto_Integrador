@@ -44,12 +44,10 @@ header > h1{
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.192);
 }
-
 nav{
     padding: 10px;
     box-shadow: 0px 7px px rgba(0, 0, 0, 0.18);
 }
-
 nav > a{
     color: white;
     font-family: var(--font-padrao);
@@ -61,34 +59,60 @@ nav > a{
     border-radius: 10px;
     transition-duration: .5s;
 }
-
 nav > a:hover{
     color: #40BC66;
     background-color: var(--cor02);
 }
-
-/* noticias */
-
-section.noticias{
-    margin-top: 20px;
-    width: 800px;
+.principal {
+    /* width: 100%; */
+    background-image: url('images/coleta.jpg'); /* Substitua pelo caminho da sua imagem */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 400px; /* Ajuste a altura conforme necessário */
+            width: 100%; /* Ajuste a largura conforme necessário */
+            display: flex;
 }
 
-section.noticias#n1 h2,p{
-    padding-top: 5px;
-   margin-left: 400px;
-   text-align: left;
+.content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
-section.noticias#n1 div img{
-    margin-left: 100px;
-    float: left;
-}
-
-article p{
-    width: 800px;
-    text-align: right;
-}
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #4caf50;
+            color: white;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #4caf50;
+            color: white;
+        }
 
    </style>
 </head>
@@ -101,6 +125,50 @@ article p{
             <a href="cadastro.html">Cadastro</a>
             <a href="login.html">Entrar</a>
         </nav>
+
     </header>
+    <div class="principal">
+        <!-- <h1>Gestão Sustentável de Resíduos</h1>
+        <p>Comprometidos com o meio ambiente.</p> -->
+        <!-- <img src="images/coleta.jpeg" alt="">
+        <img src="images/coleta1.jpeg" alt="">
+        <img src="images/coleta2.jpeg" alt=""> -->
+    </div>
+
+    <div class="content">
+        <div class="section" id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma empresa dedicada ao gerenciamento eficiente de resíduos, promovendo práticas sustentáveis e contribuindo para a preservação do meio ambiente.</p>
+        </div>
+
+        <div class="section" id="servicos">
+            <h2>Serviços</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Importância</h3>
+                    <p>Realizamos a coleta de resíduos sólidos urbanos e comerciais.</p>
+                </div>
+                <div class="card">
+                    <h3>Reciclagem</h3>
+                    <p>Processamos materiais recicláveis para reutilização.</p>
+                </div>
+                <div class="card">
+                    <h3>Consultoria Ambiental</h3>
+                    <p>Oferecemos orientação sobre gestão de resíduos e sustentabilidade.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações sobre nossos serviços.</p>
+            <p>Email: contato@empresa.com.br</p>
+            <p>Telefone: (11) 1234-5678</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Empresa de Gerenciamento de Resíduos. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

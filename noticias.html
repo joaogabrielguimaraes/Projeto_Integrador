@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Notícias</title>
+    <link rel="shortcut icon" href="images/mundo.ico.png" type="image/x-icon">
+
+    <style>
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --cor00:#CEFFE6;
+    --cor01:#ABEEC6;
+    --cor02:#87DEA6;
+    --cor03:#64CD86;
+    --cor04:#40BC66;
+
+    --font-titulo: 'New Amsterdam', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor02),var(--cor04));
+    padding-top: 40px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--font-titulo);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.192);
+}
+
+nav{
+    padding: 10px;
+    box-shadow: 0px 7px px rgba(0, 0, 0, 0.18);
+}
+
+nav > a{
+    color: white;
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    color: #40BC66;
+    background-color: var(--cor02);
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+article a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Últimas Notícias</h1>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Meio Ambiente</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <img src="https://via.placeholder.com/400x200" alt="Notícia 1">
+            <h2>Notícia 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque malesuada erat, sed feugiat purus.</p>
+        </article>
+        <article>
+            <img src="https://via.placeholder.com/400x200" alt="Notícia 2">
+            <h2>Notícia 2</h2>
+            <p>Curabitur auctor, ligula in sagittis fermentum, nisl libero suscipit urna, non accumsan quam odio a neque.</p>
+        </article>
+        <article>
+            <img src="https://via.placeholder.com/400x200" alt="Notícia 3">
+            <h2>Notícia 3</h2>
+            <p>Vivamus at arcu eget nisi vulputate scelerisque. Sed lacinia, erat vitae facilisis sodales, erat nunc dapibus libero.</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Notícias. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
